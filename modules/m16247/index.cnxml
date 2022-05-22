@@ -1,0 +1,134 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Module 3 - Query/Answer/Significance: Body Ambient Bondgraph Model Using Heat Flux Transducer</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>0dbbe9f9-9952-4117-bd4b-4ff4eae96aa4</md:uuid>
+</metadata>
+  <content>
+    <section id="id-804005148607">
+      <title>Introduction</title>
+      <para id="id4347518">For the understanding of heat transfer between a human body and the ambient, a bondgraph model can provides a complete system view of the contributors to heat stress, and the equation layer of the model can be tailored for various operating conditions, using either derived or empirical formulas to describe heat transfer.</para>
+      <para id="id7637531">In this paper, we provide a query and answer on a theoretical situation to demonstrate how a heat flux transducer in conjunction with the body ambient bondgraph model would be used to monitor against the onset of heat stress illness.</para>
+    </section>
+    <section id="id-946768991549">
+      <title>Query</title>
+      <para id="id3500707">If a runner were to be instrumented with a heat flux transducer prior to running a marathon, how would the measured data be used to estimate the onset of heat stress illness, and what percentage of error needs to be figured into the measured data?</para>
+    </section>
+    <section id="id-0190053669801">
+      <title>Answer</title>
+      <section id="id-509774328539">
+        <title>Model</title>
+        <para id="id3857302">A Bondgraph model is a graphical technique to describe energy flow in and amongst physical systems. Presented below is a Bondgraph model to illustrate the body-ambient heat exchange and how it would be measured using a heat flux transducer</para>
+        <para id="id3491280">Figure 1: Bond Graph Model of Heat Flow and Temperature of the Human Body</para>
+        <figure id="id4800421">
+          <media id="idm270336" alt=""><image src="../../media/graphics1-015b.jpg" mime-type="image/jpeg" height="256" width="600"/></media>
+        </figure>
+        <para id="id4443302">Where,</para>
+      </section>
+    </section>
+    <section id="id9402799">
+      <para id="id9224472">HF = Heat Flow</para>
+      <para id="id9411691">T = Temperature</para>
+      <para id="id9411695">Eva = Evaporation</para>
+      <para id="id3510664">Rad = Radiation</para>
+      <para id="id9164673">Con = Convection</para>
+      <para id="id9341780">Amb = Ambient</para>
+      <para id="id9341784">Sk = Skin</para>
+      <para id="id9157640">Bc = Body Core</para>
+    </section>
+    <section id="id3473611">
+      <section id="id-273840008731">
+        <title>Assumptions</title>
+        <list list-type="bulleted" id="id9168617">
+          <item>The runner is 6’ tall (183cm), 150lbs (68.2kg) and running at a steady pace to complete the marathon in a time of 3.9 hours (3.0m/s). </item>
+          <item>The ambient temperature is 30ºC with a relative humidity of 60%; resulting in an apparent temperature of 35ºC. </item>
+          <item>Still air environment, resulting in an apparent wind speed equal to running speed. </item>
+        </list>
+      </section>
+      <section id="id-230525362163">
+        <title>System Equations</title>
+        <para id="id4840688">The system equations layer of the model forms the basis for mathematical evaluation of system energy transfer. The equations presented below are empirically derived based on experimental field data.</para>
+        <list list-type="bulleted" id="id9427296">
+          <item>For approximate heat generated during running, </item>
+        </list>
+        <para id="id4304322">HFbc = (body mass[kg])*(running speed[m/s])[4J*s/m/kg]</para>
+        <list list-type="bulleted" id="id3495797">
+          <item>For heat loss due to evaporation,</item>
+        </list>
+        <para id="id9169062">HFeva = .312(Teva) + 25.2 [W/m²]@ Tamb = 35ºC; 3.0m/s wind speed</para>
+        <list list-type="bulleted" id="id9192850">
+          <item>For heat transfer due to conduction and radiation,</item>
+        </list>
+        <para id="id8263063">HFrad = .5833(Trad) + 30.96 [W/m²]@ Tamb = 35ºC; 3.0m/s wind speed</para>
+        <para id="id9336050">HFcon = .169(Tcon) + 21 [W/m²]@ Tamb = 35ºC; 3.0m/s wind speed</para>
+        <list list-type="bulleted" id="id9239130">
+          <item>An ideal transducer,</item>
+        </list>
+        <para id="id7770465">HFamb*Tamb = HFsk*Tsk</para>
+        <list list-type="bulleted" id="id3843375">
+          <item>For a more realistic model,</item>
+        </list>
+        <para id="id7591214">HFamb = (Tsk/Tamb) * HFsk * (1 + D)</para>
+        <para id="id7663899">D = sensor introduced deviance</para>
+        <list list-type="bulleted" id="id7663903">
+          <item>Overall system equation,</item>
+        </list>
+        <para id="id4735844">HFbc = (.312(Teva) + 25.2 + .169(Tcon) + 21 + .5833(Trad) + 30.96 – .312(Teva) + 25.2)·(Tsk/Tamb)·(1+.03) </para>
+        <list list-type="bulleted" id="id4251362">
+          <item>For our measuring device,</item>
+        </list>
+        <para id="id9400120">Vout = HF* 125µV·W-¹·m² ± 3.0%</para>
+      </section>
+      <section id="id-564943493721">
+        <title>Results</title>
+        <para id="id9527173">Solving the equations, we arrive at the following results:</para>
+        <para id="id3844589">HFeva = -35.5 W/m²;HFrad = 50.2 W/m²; HFcon = 26.6 W/m²</para>
+        <para id="id9100272">HFbc = 440 W/m²</para>
+        <para id="id9100276">Vout = 55 ± 5.5 mV</para>
+        <para id="id4576006">This readout holds for when the ambient, heat production from work, and body thermoregulatory responses are in steady-state.</para>
+        <para id="id4314579">If we take the heat flux chart readout from a similar study, we see heat flux measurements from four different locations on the body, as well as characteristic response typical of an athlete in an aerobic exercise under constant environmental conditions.</para>
+        <para id="id9191833">Figure 2: Heat flux transducer chart recorder readout; W/m² with respect to time</para>
+        <figure id="id4347438">
+          <media id="idp3974144" alt=""><image src="../../media/graphics2-2b31.jpg" mime-type="image/jpeg" height="410" width="600"/></media>
+        </figure>
+        <para id="id9253589">This above data can be described in terms of several distinct periods,</para>
+        <list list-type="bulleted" id="id9452635">
+          <item>An initial period where the heat flux spikes to high value due to the onset of physical work and generation of heat. </item>
+          <item>A dampening of heat flux as the body’s thermoregulatory responses compensate for the increased heat flow (at which we see 50mV readout, correlating to 399.5 W/m² heat flux). </item>
+          <item>Some variation in heat flux during a steady-state activity, that can be accounted for several factors detailed in the model, such as </item>
+          <item>A change in ambient temperature or relative humidity </item>
+          <item>A change in wind speed </item>
+          <item>A change in level of exertion </item>
+          <item>Changes in sensor functionality, such as contact w/ the skin </item>
+          <item>As physical exertion is completed, the heat flux from body to ambient gradually decreases to zero as </item>
+        </list>
+        <para id="id9376288">For this type of exertion, prior to the onset of heat illness, one would expect to see a consistent, gradual decrease in heat flux as thermoregulatory responses begin to decline (such as when the runner has expended their supply of body water for sweat, and no longer dissipate heat by sweat evaporation). It is at this point safety monitoring personnel should query the runner to gauge the onset of heat illness, and consider removing the athlete from the competition.</para>
+        <para id="id9631761">Changes in environmental conditions, such as temperature, humidity, and wind speed, can be accounted for by comparing changes in steady-state heat flux to characteristic equations for those components in the model.</para>
+        <para id="id8962552">Errors in the heat flux transducer can be shown to be small compared to the peak heat flux measured, and as such can be filtered from a change in heat flux evaluation used to predict heat illness.</para>
+      </section>
+      <section id="id-727275764679">
+        <title>Discussion </title>
+        <para id="id8900172">For discussion we can consider the model and heat flux transducer data in usage for various activities.</para>
+        <section id="id-731428068969">
+          <title>Anaerobic Athlete</title>
+          <para id="id9587455">Anaerobic athletes, such as the case of a football player, generate heat in short durations. The effects of this heat generation can be cumulative if periods of rest are not long enough to decrease body temperature, or if periods of exercise are long enough to exhaust reserves of body fluids. Environmental conditions are variably beneficial or antagonistic. Clothing and equipment can impede heat dissipation to the environment.</para>
+          <para id="id9816078">The initial spike in heat and post-activity cooling down should remain similar to the marathon runner, but the period of steady-state heat loss would likely not occur as thermoregulatory response interaction with ambient conditions would not have time to stabilize. Protective equipment should decrease the effect of heat transfer mechanisms.</para>
+          <para id="id9816083">The monitoring algorithm should likely key on the negative slew rate of the voltage readouts during the periods where heat is no longer being generated due to activity, but the thermoregulatory responses should still be dissipating stored heat.</para>
+        </section>
+        <section id="id-543301838313">
+          <title>Physical Labor in a Variable Environment</title>
+          <para id="id3747816">Some occupational tasks generate heat in short durations, but over extended periods of work. Examples include roofers, construction workers, or farmers. Antagonistic conditions are common. Clothing and safety equipment generally provide some impediment to heat dissipation.</para>
+          <para id="id9633973">Data from this activity would be similar to the anaerobic athlete, in that the periods of activity are of shorter duration. Heat transfer could be negative over extended periods of time as the ambient adds heat to the body rather sinks heat generated by work. The same negative slew rate is an indicator of effective body response to overheating.</para>
+        </section>
+        <section id="id-756822590366">
+          <title>Physical Labor in an Extreme Environment</title>
+          <para id="id4749295">Environmental conditions can extreme in occupations such as firefighters or other workers in high heat environments. Protective equipment is designed as a thermal insulator, which also serves to prevent the body from dissipating heat.</para>
+          <para id="id8996124">Data from this type of activity would expect to be quite different from previous cases, as antagonistic conditions overwhelm heat dissipation mechanisms. Integration of heat transfer over time may yield useful data in predicting critical overheating.</para>
+        </section>
+      </section>
+      <section id="id-389645736437">
+        <title>Significance</title>
+        <para id="id9485712">Human thresholds for the onset of heat stress illness are not fully defined. Experiments directly measuring body core temperature have shown the human body able to withstand temperatures in excess of the values typically associated with damage. As such there remains significant biomedical characterization necessary prior to any implementation of such a method.</para>
+        <para id="id9485715">Bond graph models have previously not been developed to show the total heat transfer system between the human body and various environmental contributors. Previous approaches to monitoring the body against heast stress risks have depended primarily upon temperature measurements and static thresholds to determine the onset of heat stress illness. The concept of monitoring changes in heat transfer to determine an unhealthy thermoregulatory response has previously not been introduced. The method presented in this paper is appropriate for further development and experimentation.</para>
+      </section>
+    </section>
+  </content>
+</document>

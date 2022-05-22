@@ -1,0 +1,180 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Module 2 - Model: Body Ambient Bondgraph Model Using Heat Flux Transducer</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>6edb0e87-f904-4f34-8b17-68f59cbc7fca</md:uuid>
+</metadata>
+  <content>
+    <section id="id-555199371597">
+      <title>Introduction</title>
+      <para id="id6849976">There are numerous occupational and leisure tasks for which the participants are at risk of heat stress related illness. Existing practices for protection against heat stress are limited to education of antagonistic conditions. </para>
+      <para id="id6862446">Education and self monitoring has the drawbacks in that any person tasked in making a qualitative judgment has motivating factors against protecting themselves. Methods for persistent monitoring exist but have not been adopted by industry for several factors. Measurement of body core temperature is impractical for almost all occupations. Measurement of skin temperature is not dependable as it is not a leading indicator of heat stress illness.</para>
+      <para id="id6862412">The bondgraph model provides a complete system view of the contributors to heat stress, and the equation layer of the model can be tailored for various operating conditions, using either derived or empirical formulas to describe heat transfer. This paper describes a model tool such that a heat flux transducer can provide a leading indicator of heat stress illness for a variety of tasks.</para>
+    </section>
+    <section id="id-668179426538">
+      <title>Model</title>
+      <para id="id6862450">A Bondgraph model is a graphical technique to describe energy flow in and amongst physical systems. Presented below is a Bondgraph model to illustrate the body-ambient heat exchange and how it would be measured using a heat flux transducer</para>
+      <para id="id6707012">Figure 1: Bond Graph Model of Heat Flow and Temperature of the Human Body</para>
+      <figure id="id6704691">
+        <media id="idm2175808" alt=""><image src="../../media/graphics1-4541.jpg" mime-type="image/jpeg" height="256" width="600"/></media>
+      </figure>
+      <para id="id6849417">Where,</para>
+    </section>
+    <section id="id6861964">
+      <para id="id6861970">HF = Heat Flow</para>
+      <para id="id6861974">T = Temperature</para>
+      <para id="id6745061">Eva = Evaporation</para>
+      <para id="id6745065">Rad = Radiation</para>
+      <para id="id6745069">Con = Convection</para>
+      <para id="id6745074">Amb = Ambient</para>
+      <para id="id6849940">Sk = Skin</para>
+      <para id="id6849945">Bc = Body Core</para>
+    </section>
+    <section id="id6849951">
+      <para id="id6849547">For those new to Bondgraph models, the following explanation uses terminology specific to the model presented in this paper:</para>
+      <list list-type="bulleted" id="id6849554">
+        <item>Each element shows that there is a relationship between heat flow (HF) and temperature (T). To translate the above into generic bond graph terminology, heat flow is the bondgraph “flow” factor; temperature is the “effort” factor.</item>
+        <item>The arrows illustrate the sign convention for direction of power flow. Power flow can be in either direction (either positive or negative)</item>
+        <item>Strokes show causality. As shown in the system equations, heat flux is dependant upon temperature</item>
+        <item>“R-Element”: The resistor is a 1-port an element in which the heat flux and temperature variables at the single port are related by a static function</item>
+      </list>
+      <para id="id6849270">Figure 2: Symbol for an R-Element</para>
+      <figure id="id6849277">
+        <media id="idm2370032" alt=""><image src="../../media/graphics2-1bc6.jpg" mime-type="image/jpeg" height="72" width="101"/></media>
+      </figure>
+      <para id="id6705109">The half arrow means that the T and HF is positive; where T represents temperature, and HF, represents heat flow. The constitutive relationship is that heat flow is a function of temperature. </para>
+      <list list-type="bulleted" id="id6446734">
+        <item>“Transformer”: The bondgraphic transformer can represents the heat flux transducer used to measure heat flux, located on the ambient-to-body threshold on the skin. It conserves power and transmits the factors of power with proper scaling as defined by the transformer modulus.</item>
+      </list>
+      <para id="id6446748">In a departure from a standard Bondgraph transformer, the modulus for this project inserts an offset and slope to the modulus representative of the error in the measuring device.</para>
+      <para id="id6607441">Figure 3: Symbol for a Transformer</para>
+      <figure id="id6607448">
+        <media id="idm10462912" alt=""><image src="../../media/graphics3-e166.jpg" mime-type="image/jpeg" height="77" width="297"/></media>
+      </figure>
+      <list list-type="bulleted" id="id6725014">
+        <item>The large nodes labeled “1” are called 1-junctions. They indicate a node where the heat flows sum to zero.</item>
+        <item>Radiation, convection, and evaporation are heat transfer phenomenon affecting the ambient.</item>
+      </list>
+      <section id="id-748975131568">
+        <title>System Equations</title>
+        <para id="id6691805">From the Bondgraph model, system equations may be generated using a step by step procedure. For the explanation of this model, generic heat transfer equations will be show to demonstrate the basis of usage in fundamental thermodynamic theory. Depending on the application, these equations can be replaced with more sophisticated equations based on heat transfer theory, or one could utilize empirically derived equations from field data.</para>
+        <para id="id6586534">Observe elements contributing to the system and write down equations looking at causalities.</para>
+        <para id="id6586540">For natural convection,</para>
+        <para id="id6586544">HF = h∆T [W/m²]</para>
+        <para id="id6691812">h = convective thermal heat transfer coefficient</para>
+        <para id="id6704745">∆T = temperature difference between surface (skin) and fluid (air)</para>
+        <para id="id6704753">For conduction,</para>
+        <para id="id6704757">HF = k∆T/x [W/m²]</para>
+        <para id="id6698836">k = thermal conductivity of the material [W/m·ºK]</para>
+        <para id="id6698845">∆T = temperature difference between surface (skin) and fluid (air) [ºC]</para>
+        <para id="id6698853">x = material thickness [m]</para>
+        <para id="id6028138">For radiation,</para>
+        <para id="id6028142">HF = ε(T)· σ ·T^4 [W/m²]</para>
+        <para id="id6028149">ε(T) = correction factor, (emissivity correction factor times radiation spectrum formula)</para>
+        <para id="id6710725">σ = Stefan-Boltzmann constant, 5.670400×10−8 [W·m-2·K-4]</para>
+        <para id="id6710731">T = temperature [K]</para>
+        <para id="id6710738">For evaporation, heat transfer equations are very complex, and now shown here. They are characterized by an s-shaped curve relating heat flux to surface temperature differences, which is the same reliance on temperature that holds for all equations in this model.</para>
+        <para id="id6701902">For heat transfer from the body core to skin, equations are a combination of series convection, conduction, and radiation transfers at various boundaries. </para>
+        <para id="id6701909">HF = h∆T + k∆T/x [W/m²]</para>
+        <para id="id6701924">Write down equations for junctions and two-port elements.</para>
+        <para id="id6598192">For heat flux transducer transformer-element,</para>
+        <para id="id6598198">HFamb*Tamb = HFsk*Tsk =&gt;</para>
+        <para id="id6598204">HFamb = (Tsk/Tamb) * HFsk * (1 + D)</para>
+        <para id="id6598208">D = sensor introduced deviance</para>
+        <para id="id6598213">HFrad + HFeva + HFcon + HFamb = 0</para>
+        <para id="id6849435">Trad = Teva = Tcon = Tamb</para>
+        <para id="id6849439">HFsk + HFbc = 0</para>
+        <para id="id6849443">Tsk = Tbc</para>
+        <para id="id6849447">Replace variables until the right sides of the equations are expressed in terms of states and system parameters.</para>
+        <para id="id6849457">HFbc = (h∆T + k∆T/x + ε(T)· σ ·T^4 – Hfeva)·(Tsk/Tamb)·(1+D)</para>
+        <para id="id6196310">More complex models can be solved using MATLAB or a variety of simulation tools designed specifically for Bondgraph models. </para>
+      </section>
+      <section id="id-485105345963">
+        <title>Measuring Device</title>
+        <section id="id-973801306643">
+          <title>Heat Flux Sensor Defined</title>
+          <para id="id6849896">Heat flux is defined as the flow per a unit of area per unit of time. For this paper, we intend to utilize [W/m²] (or Joule/second/meter²).</para>
+          <para id="id6849905">The majority of heat flux transducers, including the one visualized for this project, are based as its beginning element the thermocouple. A thermocouple consists of a bond between to materials (typically copper and constantan) that behave differently to heat. This bond will form an impedance directly proportional to the temperature. </para>
+          <para id="id6446774">Numerous thermocouples connected in series create a thermopile, with the increased number of joints improving the signal. The thermopile is then embedded in a filling material which should provide a uniform distribution and a thermal impedance, at which point it may be considered a transducer. As heat flows from one side of the transducer to the, thermocouple joints create a voltage differential representing heat flux.</para>
+          <para id="id6446786">Figure 4: Heat Flux Transducer:</para>
+          <figure id="id6691740">
+            <media id="idm9916704" alt=""><image src="../../media/graphics4-80ce.jpg" mime-type="image/jpeg" height="297" width="600"/></media>
+          </figure>
+        </section>
+        <section id="id-37041140357">
+          <title>Sensor Related Error Sources</title>
+          <para id="id6732361">There are several sources of errors related to heat flux sensors, including dynamic effects, lateral fluxes, distortion/deflection, and additional data acquisition elements.</para>
+          <para id="id6732369">Dynamic effects errors are introduced when the heat fluxes change at a rate faster than the response time of the sensor. When specifying a sensor, it is therefore preferable to utilize sensors with a low mass. In the practice of a heat flux transducer for measuring heat flow to and from the human body, minimizing the size and mass of the sensor also improves the comfort and therefore utility of the device.</para>
+          <para id="id6196002">The heat flux of interested in body-ambient measurements is the flux perpendicular to the skin. If a sensor is sensitive to lateral fluxes, i.e. flux in the direction parallel to the surface of the skin that will introduce an error in the measurement. Lateral fluxes are minimized in the construction of sensors by maintaining uniformity in the filling material.</para>
+          <para id="id6196012">Distortion and deflection of heat flow occurs when the thermal impedance of the sensor varies significantly from the characteristics of the material being measured. Distortion is minimized by limiting the thermal impedance of the filling material, increasing the size of the sensor surface area, or correcting for this error in sensor calibration. Deflection is minimized by adding a guard around the edge of the transducer, composed of the same material as the filling. Heat flow will be irregular in the guard region, but as it is not populated with thermocouples, heat flux measurements are not affected.</para>
+        </section>
+        <section id="id-453299889446">
+          <title>Self Calibrating Sensor</title>
+          <para id="id6849165">A self calibrating heat flux sensor is achieved by combining the heat flux transducer described above with a film heating element on one side. At regular intervals, the film heater is activated with a known generated heat flux, 50% of which will pass through the heat flux transducer. In the case of non-matching conductivities, a deviation occurs, which is then used to generate a new calibration factor to compensate for sensor errors.</para>
+        </section>
+        <section id="id-976784833677">
+          <title>Specification of Selected Device</title>
+          <para id="id6849184">With the above knowledge and some assumptions on how one would want to proceed with our theoretical application, one can generate a performance based specification for the design of a heat flux transducer:</para>
+          <table id="id6849676" summary="">
+            <tgroup cols="2">
+              <colspec colnum="1" colname="c1"/>
+              <colspec colnum="2" colname="c2"/>
+              <tbody>
+                <row>
+                  <entry>Parameter</entry>
+                  <entry>Specification and Justification</entry>
+                </row>
+                <row>
+                  <entry>Sensitivity</entry>
+                  <entry>125 µV/(W/m²)</entry>
+                </row>
+                <row>
+                  <entry>Range</entry>
+                  <entry>-2000 to 2000 W/m²</entry>
+                </row>
+                <row>
+                  <entry>Response time</entry>
+                  <entry>&lt; 30s</entry>
+                </row>
+                <row>
+                  <entry>Sensitive area</entry>
+                  <entry>12.5cm² (.00125m²); Equivalent to a 5cm x 2.5cm patch</entry>
+                </row>
+                <row>
+                  <entry>Thermal conductivity</entry>
+                  <entry>0.209 W/m·K; equivalent to human epidermis</entry>
+                </row>
+                <row>
+                  <entry>Guard area</entry>
+                  <entry>0.5cm distance on each edge</entry>
+                </row>
+                <row>
+                  <entry>Non stability</entry>
+                  <entry>5% (maximum change in sensitivity per calendar year under calibration conditions)</entry>
+                </row>
+                <row>
+                  <entry>Operating temperature</entry>
+                  <entry>0 to 70ºC</entry>
+                </row>
+                <row>
+                  <entry>Impedance</entry>
+                  <entry>5 Ω</entry>
+                </row>
+                <row>
+                  <entry>Accuracy</entry>
+                  <entry>±5%</entry>
+                </row>
+                <row>
+                  <entry>Self Calibration</entry>
+                  <entry>Yes</entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </section>
+      </section>
+      <section id="id-821250427249">
+        <title>Methodology</title>
+        <para id="id6705214">The methodology proposed for using the above sensor and model in the prevention of heat stress illness incorporates several steps. A heat flux transducer is affixed to the human body for the purpose of measuring heat flux during activity. Measurements are taken and the heat transfer is tracked over a period of time. System equations are utilized to develop an algorithm to recognize decrease of body thermoregulatory response and the onset of heat stress illness, particularly in comparison to the environmental conditions present. Finally, once normal thermoregulatory response has been characterized and monitoring algorithms have been developed, heat transfer is monitored for deviations, which may be accounted for by a decrease in the body thermoregulatory response.</para>
+      </section>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,73 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Module 1 - Situation: Body Ambient Bondgraph Model Using Heat Flux Transducer</title>
+  <metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>c6d531c8-2601-43f4-a58d-f7a9e2ca2750</md:uuid>
+</metadata>
+  <content>
+    <section id="id-650749816649">
+      <title>Introduction</title>
+      <para id="id9580580">There are numerous occupational and leisure tasks for which the participants are at risk of heat stress related illness. Current practices for protection against heat stress illness are limited to education and self evaluation. Independent monitoring by means of sensors has not been adopted by industry due to reasons of impracticality. Direct measurement of body core temperatures is impractical for the majority of occupational and leisure tasks.</para>
+      <para id="id9875934">The model presented in this paper shows all elements of heat transfer, providing a complete systematic view of antagonistic conditions and the human body. This paper describes how heat stress illness can be prevented by monitoring the body thermoregulatory response and predicting catastrophic failure. This is evident in measuring the heat transfer to and from the body, and comparing this data to heat transfer during normal operation.</para>
+    </section>
+    <section id="id-82512114703">
+      <title>Body Thermal Regulation Mechanisms and Antagonistic Conditions</title>
+      <para id="id10522282">The human body at all times will strive to maintain a core temperature at approximately 37 ± 0.6 ºC. The core temperature is defined as the temperature of the arterial blood at the aorta. The high specific energy of blood and low thermal impedance to internal organs maintain critical organs at a temperature very similar.</para>
+      <para id="id10336323">Focusing this paper upon conditions where the body is at risk to over heating, we can describe three primary mechanisms of heat transfer: radiation, convection and conduction, and evaporation. </para>
+      <para id="id7928866">Heat will radiate to or from the body based on the temperature differential between the skin and external objects. Air temperature contributes only a small factor in heat radiation, as air is a poor radiator. If the body is in direct or reflected path of the sun’s rays, the body will absorb heat.</para>
+      <para id="id10007359">Heat will transfer to or from an object in contact with the skin. In the case where the object is air, this is known as convection, be it natural (still air) or forced (moving air). In the case the object is something other than air, it is conductive heat transfer. Conductive heat transfer is not typical of most environments where heat illness is a risk. </para>
+      <para id="id8927609">In evaporation, sweat is diffused across the skin and condenses on of the skin. Heat is transferred from the skin to ambient as the sweat changes phase from liquid to gas. This is the most effective heat transfer mechanism of the human body. In environments where the relative humidity is high, sweat will not evaporate, this mechanism provides no relief. An average person will not tolerate temperatures above 33ºC, even at rest, without the ability to dissipate heat through evaporation.</para>
+      <para id="id10109318">Figure 1: Modes of Heat Generation and Transfer for the Human Body</para>
+      <figure id="id8645761">
+        <media id="idm4877376" alt=""><image src="../../media/graphics1-09d7.jpg" mime-type="image/jpeg" height="447" width="599"/></media>
+      </figure>
+      <para id="id3712908">The primary response of the body to an increased core temperature is to increase blood flow to extremities by dilating the capillaries of the blood system, effectively using parts of the body as a thermal sink. Mass flow can further be improved by increasing the heart rate. As sweat is secreted to the skin, the sweat evaporates and energy is further dissipated through phase change.</para>
+    </section>
+    <section id="id-0812125967237">
+      <title>Heat Stress and Risks</title>
+      <para id="id8083100">Heat stress illness effects can be either acute, such as heat stroke, heat exhaustion, heat cramps, fainting, and decline of performance; or chronic, such as loss of ability to tolerate heat, hypertension, heart muscle damage, reduced libido and impotence.</para>
+      <para id="id9022348">Figure 2: Spectrum of Heat Stress Illness</para>
+      <figure id="id9875314">
+        <media id="idm6890848" alt=""><image src="../../media/graphics2-a806.jpg" mime-type="image/jpeg" height="347" width="599"/></media>
+      </figure>
+    </section>
+    <section id="id-820152614942">
+      <title>Description of Occupational and Leisure Tasks</title>
+      <para id="id9674685">Aerobic athletes, such as the example of a runner during a marathon, will generate heat in a consistent manner for an extended period of time. The environment can be variably providing either beneficial or antagonistic conditions. Clothing and equipment do not generally impede the dissipation of heat.</para>
+      <para id="id7842032">Anaerobic athletes, such as the case of a football player, generate heat in short durations. The effects of this heat generation can be cumulative if periods of rest are not long enough to decrease body temperature, or if periods of exercise are long enough to exhaust reserves of body fluids. Environmental conditions are variably beneficial or antagonistic. Clothing and equipment can impede heat dissipation to the environment.</para>
+      <para id="id9247302">Some occupational tasks generate heat in short durations, but over extended periods of work. Examples include roofers, construction workers, or farmers. Antagonistic conditions are common. Clothing and safety equipment generally provide some impediment to heat dissipation.</para>
+      <para id="id8506730">Environmental conditions can extreme in occupations such as firefighters or other workers in high heat environments. Protective equipment is designed as a thermal insulator, which also serves to prevent the body from dissipating heat.</para>
+    </section>
+    <section id="id-815112475459">
+      <title>Current Practices for Protection Against Heat Stress</title>
+      <para id="id8440147">The current approach to protection against thermal stress involves worker education. Employees are given information on how antagonistic conditions exacerbate overheating risks and how to recognize the early signs of heat stress illness.</para>
+      <para id="id8118987">Figure 3: Sample Educational Chart for Self Monitoring Against Heat Stress Illness</para>
+      <figure id="id8107827">
+        <media id="idm7552016" alt=""><image src="../../media/graphics3-067b.jpg" mime-type="image/jpeg" height="800" width="581"/></media>
+      </figure>
+      <para id="id9021625">The Wet Bulb Globe Temperature (WBGT) index is considered the authoritative standard in providing employees usable information in quantifying the severity of antagonistic conditions. It is derived by taking measurements with three devices that separate heat flow components all effects save for wind speed, all effects, and ambient temperature. These measurements are then combined by means of a weighted average to the WBGT.</para>
+      <para id="id9886584">Unfortunately, while the WGBT method is accurate and reliable, it is also requires expensive equipment with high maintenance requirements. As such this method is impractical for small scale facilities, and such data is not even recorded at typical meteorological sites.</para>
+      <para id="id8690627">Figure 4: Dry and Wet Bulb Measurement Setup for WBGT Index Data</para>
+      <figure id="id8251632">
+        <media id="idm1438512" alt=""><image src="../../media/graphics4-4ce7.jpg" mime-type="image/jpeg" height="686" width="600"/></media>
+      </figure>
+    </section>
+    <section id="id-1768219019">
+      <title>Alternate Practices</title>
+      <para id="id3741883">There are two established methods of reliably monitoring body core temperatures for a mobile person. These include probes inserted within the esophagus, and alternately the rectum. Both are uncomfortable, and impractical for periods in excess of 24 hours.</para>
+      <para id="id8927396">A third device still under development and involves a wireless device which is ingested, providing persistent monitoring as it works it’s way through the digestive system over a period of 18 to 36 hours. Studies to date show the performance to be nearly as dependable as the established esophageal and rectal thermometers. Its primary drawbacks are that the devices are not reusable, and has not yet been widely accepted by the market.</para>
+      <para id="id10341381">Various devices have been developed which monitor skin temperature. Skin temperature itself is a poor estimate of core temperature due to the greatly variable impedances between core to skin, as well as skin to ambient. Some efforts couple skin temperature with other measured factors, such as heart rate, accelerometer data, and WBGT index information in an effort to arrive at a more accurate estimation. None of these efforts have proceeded past initial trials.</para>
+    </section>
+    <section id="id-464062930692">
+      <title>Bondgraph Model and Heat Flux Transducer</title>
+      <para id="id9559701">This paper proposes a bondgraph model for the understanding of the heat transfer mechanisms between the human body and ambient under various conditions. Individual contributions to body heat are shown as r-elements. A measurement device of a heat flux transducer is shown as a transformer element. The equation layer of the model can be tailored for various operating conditions, using either derived or empirical formulas to describe heat transfer.</para>
+      <para id="id9863551">Figure 5: Bond Graph Model of Heat Flow and Temperature of the Human Body</para>
+      <figure id="id9802340">
+        <media id="idm6786704" alt=""><image src="../../media/graphics5.jpg" mime-type="image/jpeg" height="256" width="600"/></media>
+      </figure>
+      <para id="id10299461">The model shows the same components of body-ambient heat transfer as are found in most occupation educational literature. The model further demonstrates causality and direction of power flow. The system equation layer provides the ability to mathematically quantify contributing elements of system heat transfer.</para>
+    </section>
+    <section id="id-700112555297">
+      <title>Results</title>
+      <para id="id8127410">This approach holds advantages over existing methods in that the person at risk is no longer responsible for their own protection, thereby removing certain conflicting interests in making a determination. The model presents total system data for the body and ambient environment.</para>
+    </section>
+  </content>
+</document>
